@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>User Information Form</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+  <div class="container mt-5">
+    <h1>User Information Form</h1>
+    <form action = "result">
+      <div class="form-row">
+        <div class="col-md-6 mb-3">
+          <label for="gender">Gender</label>
+          <select class="form-control" id="gender" name ="n1" required>
+            <option value="">Select Gender</option>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+        <div class="col-md-6 mb-3">
+          <label for="ethnicity">Ethnicity</label>
+          <input type="text" class="form-control" id="ethnicity" name="n2" placeholder="Ethnicity" required>
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="col-md-6 mb-3">
+          <label for="maritalStatus">Marital Status</label>
+          <select class="form-control" id="maritalStatus" name="n3" required>
+            <option value="">Select Marital Status</option>
+            <option value="single">Single</option>
+            <option value="married">Married</option>
+            <option value="divorced">Divorced</option>
+            <option value="widowed">Widowed</option>
+          </select>
+        </div>
+        <div class="col-md-6 mb-3">
+          <label for="education">Education</label>
+          <input type="text" class="form-control" id="education" name="n4" placeholder="Education" required>
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="col-md-6 mb-3">
+          <label for="previousDiagnosis">Previous Diagnosis</label>
+          <input type="text" class="form-control" id="previousDiagnosis" name ="n5" placeholder="Previous Diagnosis" required>
+        </div>
+        <div class="col-md-6 mb-3">
+          <label for="familyOCD">Family History of OCD</label>
+          <input type="text" class="form-control" id="familyOCD" name="n6" placeholder="Family History of OCD" required>
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="col-md-6 mb-3">
+          <label for="obsessionType">Obsession Type</label>
+          <select class="form-control" id="obsessionType" name = "n7" required>
+            <option value="">Select Obsession Type</option>
+            <option value="contamination">Contamination</option>
+            <option value="symmetry">Symmetry</option>
+            <option value="religious">Religious</option>
+            <option value="hoarding">Hoarding</option>
+            <option value="harm-related">Harm-related</option>
+          </select>
+        </div>
+        <div class="col-md-6 mb-3">
+          <label for="compulsionType">Compulsion Type</label>
+          <input type="text" class="form-control" id="compulsionType" name="n8" placeholder="Compulsion Type" required>
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="col-md-6 mb-3">
+          <label for="depressionDiagnosis">Depression Diagnosis</label>
+          <input type="text" class="form-control" id="depressionDiagnosis" name="n9" placeholder="Depression Diagnosis" required>
+        </div>
+        <div class="col-md-6 mb-3">
+          <label for="anxietyDiagnosis">Anxiety Diagnosis</label>
+          <input type="text" class="form-control" id="anxietyDiagnosis" name="n10" placeholder="Anxiety Diagnosis" required>
+        </div>
+      </div>
+      <input type="submit">
+    </form>
+      Result: {{result2}}
+  </div>
+</body>
+</html>
